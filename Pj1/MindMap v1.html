@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Mindmap</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button class="btn" id="addNodeBtn">+ Knoten hinzufügen</button>
+        <button class="btn" id="centerBtn">Zentrieren</button>
+        <button class="btn" id="clearBtn">Alles löschen</button>
+        <button class="btn" id="exportBtn">Exportieren</button>
+    </div>
+
+    <div id="canvas">
+        <div id="workspace">
+            <svg id="connections"></svg>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h3>Bedienung:</h3>
+        <ul>
+            <li>Doppelklick auf freie Fläche: Neuer Knoten</li>
+            <li>Knoten ziehen: Verschieben</li>
+            <li>Kleine Kreise: Verbindungen ziehen</li>
+            <li>Rechtsklick auf Linie: Verbindung löschen</li>
+            <li>Knoten auswählen + Entf: Knoten löschen</li>
+            <li>Kreis unten rechts: Größe ändern</li>
+            <li>Text passt sich automatisch an</li>
+        </ul>
+    </div>
+
+    <script src="assets/js/mindmap.js"></script>
+</body>
+</html>
